@@ -2,7 +2,7 @@
 FROM php:8.1-apache
 
 # Устанавливаем необходимые расширения PHP
-RUN docker-php-ext-install pdo_mysql
+RUN  docker-php-ext-install mysqli pdo pdo_mysq
 
 # Копируем файлы приложения в контейнер
 COPY ../app /var/www/html/
