@@ -1,9 +1,9 @@
 <?php
 // Connect to database
-$servername = "localhost";
-$username = "root_mysql"; // Enter your MySQL username
-$password = "12345"; // Enter your MySQL password
-$dbname = "autospasibo"; // Enter your database name
+$servername = "db"; // Имя сервиса MySQL в docker-compose.yml
+$username = "root_mysql"; // Имя пользователя MySQL
+$password = "12345"; // Пароль пользователя MySQL
+$dbname = "autospasibo"; // Имя базы данных
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
